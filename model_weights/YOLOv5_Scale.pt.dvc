@@ -1,0 +1,4 @@
+outs:
+- md5: 038690beacd22f70eef9a116ec1204ca
+  size: 92756949
+  path: YOLOv5_Scale.pt
