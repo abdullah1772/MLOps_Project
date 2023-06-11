@@ -104,8 +104,22 @@ Step 3: Run the Apache Airflow Script
 
 Run the YOLO_Training_Apache_DAGS.py script using Apache Airflow. Be sure to replace 'path/to' with the path to your dataset:
 
-# Replace 'path/to' with your actual dataset path in the file YOLO_Training_Apache_DAGS.py 
+Replace 'path/to' with your actual dataset path in the file YOLO_Training_Apache_DAGS.py 
+
 Run the DAGS from apache airflow server
+
+Step 4: For retraining the OCR model
+ 
+1.	Run the UrduOCR.py using MLflow
+2.	Don't forget to change the path to your dataset and save model location
+
+Step 5: Inference app
+1.To run the inference app provide the path in the Kl.py to your model weights 
+2.Run Streamlit run Kl.py
+
+Step 6: Docker File
+
+ 
 
 
 
