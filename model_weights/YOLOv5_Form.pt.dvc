@@ -1,0 +1,4 @@
+outs:
+- md5: 742feabdeff9e95946c705de0625f58b
+  size: 93217381
+  path: YOLOv5_Form.pt

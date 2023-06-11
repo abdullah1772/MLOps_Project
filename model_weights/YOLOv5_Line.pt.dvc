@@ -1,0 +1,4 @@
+outs:
+- md5: c2bccac14fbb3d0761db47f752b45ce6
+  size: 92789285
+  path: YOLOv5_Line.pt
