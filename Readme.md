@@ -75,8 +75,37 @@ The goals of this project are to create a Mlops pipeline and containerization fo
 
 
 **How to use**
+Getting Started
+
+To clone and run this application, you'll need Git installed on your computer. From your command line:
+Step 1: Clone the Repo
+
+Clone this repository using the following command:
 
 
+git clone https://github.com/abdullah1772/MLOps_Project.git
+
+Navigate to the project directory:
+
+
+cd MLOps_Project
+
+python install -r reqirements.txt
+
+Step 2: Clone YOLOv5 into the Project Directory
+
+In the MLOps_Project folder, clone the YOLOv5 repository:
+
+
+git clone https://github.com/ultralytics/yolov5.git
+
+
+Step 3: Run the Apache Airflow Script
+
+Run the YOLO_Training_Apache_DAGS.py script using Apache Airflow. Be sure to replace 'path/to' with the path to your dataset:
+
+# Replace 'path/to' with your actual dataset path in the file YOLO_Training_Apache_DAGS.py 
+Run the DAGS from apache airflow server
 
 
 
@@ -92,5 +121,12 @@ The goals of this project are to create a Mlops pipeline and containerization fo
 9.	Containerizing application and making it useable without dependency issues
 10.	Automate the process of training and testing models on different machine with out dependency issues 
 
+Contributing to MLOps_Project
 
+To contribute to MLOps_Project, follow these steps:
+
+    Fork the repository.
+    Create a new branch: git checkout -b <branch_name>.
+    Make your changes and commit them: git commit -m '<commit_message>'
+    Push to the original branch: git push origin <project_name>/<location>
 
