@@ -66,11 +66,9 @@ The goals of this project are to create a Mlops pipeline and containerization fo
 
 ![jenkins02](https://github.com/abdullah1772/MLOps_Project/assets/88187437/2c015f74-7a70-4b39-9078-47ed650f60f6)
 
+![Docker_app](https://github.com/abdullah1772/MLOps_Project/assets/88187437/546a1b68-edf0-4263-b977-5068f8947bbb)
 
 ![jenkins03](https://github.com/abdullah1772/MLOps_Project/assets/88187437/f6824b80-112f-4832-840d-0ee9188c0194)
-
-
-![Docker_app](https://github.com/abdullah1772/MLOps_Project/assets/88187437/546a1b68-edf0-4263-b977-5068f8947bbb)
 
 
 
@@ -119,8 +117,20 @@ Step 5: Inference app
 
 Step 6: Docker File
 
- 
-
+ To run the application locally, you first need to have Docker installed on your machine. After ensuring Docker is running, you can execute the following command in the terminal at the root directory of the application (where the Dockerfile resides):
+docker build -t urdu-ocr-app:latest .
+docker run -p 8501:8501 urdu-ocr-app:latest
+This will build the Docker image with the tag urdu-ocr-app:latest and then run the Docker container. The -p 8501:8501 argument maps the port 8501 inside the Docker container to port 8501 on your local machine.
+After running the Docker container, open a web browser and navigate to localhost:8501 to see the Streamlit application.
+The following screenshot shows the application running in Docker:
+![Docker_app](https://github.com/abdullah1772/MLOps_Project/assets/88187437/546a1b68-edf0-4263-b977-5068f8947bbb)
+In the application, you can upload an image using the "Choose an image..." file uploader. After an image is uploaded, the application will display the uploaded image and make a prediction of the Urdu text in the image. The result will be displayed under "Prediction".
+![image](https://github.com/abdullah1772/MLOps_Project/assets/84784641/f292e9d4-e327-48c9-9333-3230f012c0d9)
+Step 7: Jenkins
+![jenkins01](https://github.com/abdullah1772/MLOps_Project/assets/88187437/c4c38121-aed8-48cf-a1b7-bd60289c2885)
+![jenkins03](https://github.com/abdullah1772/MLOps_Project/assets/88187437/f6824b80-112f-4832-840d-0ee9188c0194)
+In order to build  CI/CD pipeline we chose Jenkins, so we named our workflow mlopsfyp and made freestyle project we attached the github link of our repository and included those 2 docker command so that our application can be containerized automatically. Below you can see our successful build
+![jenkins02](https://github.com/abdullah1772/MLOps_Project/assets/88187437/2c015f74-7a70-4b39-9078-47ed650f60f6)
 
 
 **Learning Outcomes:**
